@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="jquery.min.js"></script>
+
+    <link rel="stylesheet" href="style.css">
+    <title>Carro de Compra</title>
+
+</head>
+<body>
+
+    <section class="master">
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="color"></div>
+        <div class="container">
+            <div class="inner">
+                <h2> CARRO DE COMPRA </h2>
+                <p> Armazene os seus productos no carro, começando por prencher os formulario... </p>
+                <div class="label">
+                    <label>
+                       <span class="fnome"> Nome do Producto: </span> <br><input id="nome" type="text" maxlength="40">
+                    </label>
+                    <label>
+                        <span class="fpreco"> Preco: </span> <br><input id="preco" type="text" maxlength="40">
+                    </label>
+                    <label>
+                        <span class="fquant"> Quantidade: </span> <br><input id="quant" type="text" maxlength="40">
+                    </label>
+                </div>
+                <button onclick="info.salvar()" id="btn-salvar"> Guardar </button>
+            </div>
+            
+            <div class="inner2">
+                <div class="item">
+                    <h2> PRODUCTOS ARMAZENADOS </h2>
+                    <table border="1">
+                        <theader>
+                            <th>Nome</th>
+                            <th>Quantidade</th>
+                            <th>Preco</th>
+                            <th>Acoes</th>
+                        </theade>
+                        <tbody id="body">
+
+                        </tbody>
+                    </table>
+                </div>
+               <button onclick="info.fechar()" class="btnFechar"> Fechar lista </button>
+            </div>
+            <button onclick="info.listar()" class="btnLista"> Listar productos </button>
+            <br> <br>
+            <p class="all"> All rigth reserved :: Gilberto Lukepue 2022 </p>
+        </div>
+    </section>
+    <script src="js2.js"></script>
+</body>
+
+</html>
